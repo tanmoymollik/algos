@@ -1,0 +1,17 @@
+*knuth optimization:
+1. dp[i][j] = for all i < k < j : min(dp[i][k] + dp[k][j]) + C[i][j]
+2. dp[k][n] = for all j < n : min(dp[k-1][j] + C[j][n])
+condition:
+A[x][y] is the minimum position where to cut the array for dp[x][y]
+A[i][j-1] <= A[i][j] <= A[i+1][j]
+in terms of cost: 1. C[a][c] + C[b][d] <= C[a][d] + C[b][c] where a <= b <= c <= d [quadrangle inequality]
+                  2. C[b][c] <= C[a][d] where a <= b <= c <= d [monotonicity] (maybe optional for number 2)
+
+*convex hull optimization:
+1. dp[i] = min(dp[j] + B[j] * A[i])
+2. dp[k][i] = min(dp[k-1][j] + B[j] * A[i])
+condition:
+1. B[j] >= B[j+1]
+2. A[i] <= A[i+1]
+NOTE: both are optional for this case. if both are true then gives linear complexity. if 2 is false then lg(n) complexity per
+      dp relaxing. if 1 is false adding a line might take lg(n) complexity in optimal code.

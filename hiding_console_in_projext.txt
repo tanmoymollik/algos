@@ -1,0 +1,5 @@
+#define _WIN32_WINNT 0x0501 //this is for XP
+#include <windows.h>
+
+// add this in main funtion
+ShowWindow (GetConsoleWindow(), SW_HIDE);
