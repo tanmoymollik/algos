@@ -20,7 +20,7 @@ public class Main {
 		out.close();
 	}
 
-	static class Task {
+	static class TaskC {
 		public void solve(int testNumber, InputReader in, PrintWriter out) {
 			//insert code here
 		}
