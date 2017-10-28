@@ -81,7 +81,7 @@ struct HullDynamic : public multiset<Line> { // will maintain upper hull for max
       while (next(y) != end() && bad(next(y))) erase(next(y));
       while (y != begin() && bad(prev(y))) erase(prev(y));
    }
-   Long query(Long x) {
+   Long eval(Long x) {
       auto l = *lower_bound((Line) { x, -inf });
       return l.m * x + l.b;
    }
