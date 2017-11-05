@@ -1,9 +1,0 @@
-Chinese Remainder Theorem:
-
-Given, equations r[i] = x % p[i],
-Let M = prod(P[i]) for all i
-ans = 0
-for all i:
-	rem = M / p[i], inv = inverse of rem modulo p[i]
-	ans += (rem * inv % M) * r[i] % M
-	if ans >= M: ans -= M
