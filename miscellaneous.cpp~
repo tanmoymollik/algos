@@ -32,8 +32,8 @@ Long chinese_remainder(int r[], int p[], int n) {
 // -1 for no solution
 int baby_step(int a, int b, int mod) {
    map <int, int> mp;
+   Long an = bigmod(a, N, mod), a_inv = bigmod(a, mod-2, mod);
    int n = sqrt(mod) + 1;
-   Long an = bigmod(a, n, mod), a_inv = bigmod(a, mod-2, mod);
    Long cur = b;
 
    for(int i = 0; i < n; i++) {
