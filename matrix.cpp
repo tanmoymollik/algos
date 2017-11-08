@@ -1,22 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define PB push_back
-#define MP make_pair
-#define SZ size()
-#define all(v) v.begin(), v.end()
-#define REP(i, n) for(int i = 0; i < (int)n; i++)
-#define ITR(i, j, n) for(int i = j; i < (int)n; i++)
-#define mem(array, val) memset(array, val, sizeof(array))
-#define READ(filename) freopen(filename, "r", stdin)
-#define WRITE(filename) freopen(filename, "w", stdout)
-#define Pii pair <int, int>
-#define Fr first
-#define Sc second
-#define Long long long
-#define si(a) scanf("%d", &a)
-#define sii(a, b) scanf("%d%d", &a, &b)
-#define sdd(a, b) scanf("%lf%lf", &a, &b)
-#define Fast_IO ios_base::sync_with_stdio(0);cin.tie(0)
 
 const Long mod = 1000000007;
 const Long mod2 = mod*mod;
