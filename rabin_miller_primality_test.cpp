@@ -13,8 +13,8 @@ __int128 bigmod(__int128 a, __int128 pw, __int128 mod) {
 
 /// rabin-miller primality test, tests k times for accuracy
 bool isPrime(int k, __int128 n) {
-   if(n < 2 || n % 2 == 0) return false;
-   if(n < 4) return true;
+   if(n == 2 || n == 3) return true;
+   if(n <= 4 || n % 2 == 0) return false;
 
    int r = 0;
    __int128 d = n-1;
