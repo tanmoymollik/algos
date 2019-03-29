@@ -13,6 +13,7 @@ T bigmod(T x, T pw) {
 }
 
 /// xor transform
+/// T[2][2] = (1 / sqrt(2)) * { {1, 1}, {1, -1} }
 /// H^(-1) = H
 /// We compute sqrt(N) * H here.
 /// P -> FWHT(P, n, false) = sqrt(N) * H * P
